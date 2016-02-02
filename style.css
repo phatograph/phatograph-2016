@@ -1,0 +1,12 @@
+:root {
+  --mainColor: blue;
+}
+
+body {
+  background: green;
+
+  span {
+    color: var(--mainColor);
+    display: flex;
+  }
+}
