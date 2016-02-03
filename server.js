@@ -5,7 +5,7 @@ var static_path = path.join(__dirname, 'build');
 var port        = 4000;
 
 app.use(express.static(static_path))
-  .get('/', function (req, res) {
+  .get('/*', function (req, res) {
     res.sendFile('index.html', {
       root: static_path
     });

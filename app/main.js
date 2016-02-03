@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactRouter from 'react-router';
 import { Router, Route, Link } from 'react-router';
-var createBrowserHistory = require('history/lib/createBrowserHistory');
+let createBrowserHistory = require('history/lib/createBrowserHistory');
 
 import Hello from './component.jsx';
 import './../style.css';
