@@ -82,7 +82,7 @@ sup {
       width: $me-width;
       border-radius: $me-width / 2;
       margin-left: -5px;
-      margin-top: -5px;
+      margin-top: -3px;
 
       @media (max-width: $mobile-width) {
         $me-width: 100px;
