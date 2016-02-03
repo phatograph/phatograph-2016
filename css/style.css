@@ -22,7 +22,7 @@ h1 {
   padding-bottom: 5px;
 
   span.light {
-    color: #ddd;
+    color: #eaeaea;
 
     @media print {
       opacity: 0.3;
