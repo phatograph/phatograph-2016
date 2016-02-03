@@ -65,11 +65,9 @@
 
 	var _reactRouter2 = _interopRequireDefault(_reactRouter);
 
-	var _component = __webpack_require__(207);
+	var _resume = __webpack_require__(207);
 
-	var _component2 = _interopRequireDefault(_component);
-
-	__webpack_require__(208);
+	var _resume2 = _interopRequireDefault(_resume);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -86,22 +84,11 @@
 	  }
 	});
 
-	var Resume = _react2.default.createClass({
-	  displayName: 'Resume',
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'p',
-	      null,
-	      'Resume!'
-	    );
-	  }
-	});
-
 	var routes = _react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: createBrowserHistory() },
 	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: App }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/resume', component: Resume })
+	  _react2.default.createElement(_reactRouter.Route, { path: '/resume', component: _resume2.default })
 	);
 
 	_reactDom2.default.render(routes, document.querySelector('#main'));
@@ -24056,6 +24043,8 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	__webpack_require__(208);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24064,35 +24053,435 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Hello = function (_React$Component) {
-	  _inherits(Hello, _React$Component);
+	var Resume = function (_React$Component) {
+	  _inherits(Resume, _React$Component);
 
-	  function Hello() {
-	    _classCallCheck(this, Hello);
+	  function Resume() {
+	    _classCallCheck(this, Resume);
 
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Hello).apply(this, arguments));
+	    return _possibleConstructorReturn(this, Object.getPrototypeOf(Resume).apply(this, arguments));
 	  }
 
-	  _createClass(Hello, [{
+	  _createClass(Resume, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        'Hello',
+	        { className: 'container' },
 	        _react2.default.createElement(
-	          'span',
-	          null,
-	          'world'
+	          'table',
+	          { className: 'data' },
+	          _react2.default.createElement(
+	            'tbody',
+	            null,
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'h2',
+	                  null,
+	                  _react2.default.createElement('img', { className: 'me', src: 'http://www.gravatar.com/avatar/669eba01a4293df2f86fb10857efa0af?s=640', alt: 'me' })
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'h1',
+	                  null,
+	                  _react2.default.createElement(
+	                    'span',
+	                    null,
+	                    'Phat'
+	                  ),
+	                  _react2.default.createElement(
+	                    'span',
+	                    { className: 'light' },
+	                    'tara'
+	                  ),
+	                  _react2.default.createElement('br', null),
+	                  _react2.default.createElement(
+	                    'span',
+	                    null,
+	                    'Wang'
+	                  ),
+	                  _react2.default.createElement(
+	                    'span',
+	                    { className: 'light' },
+	                    'rungarun'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'h6',
+	                  null,
+	                  'St Andrews, UK · Thai citizen · born in 1987',
+	                  _react2.default.createElement('br', null),
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'mailto:phatograph@gmail.com?subject=Hello!' },
+	                    'phatograph@gmail.com'
+	                  ),
+	                  ' ·',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.phatograph.com', target: '_blank' },
+	                    'phatograph.com'
+	                  ),
+	                  _react2.default.createElement('br', null),
+	                  '+44 7934 592402'
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              { className: 'exp' },
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'h2',
+	                  null,
+	                  'Experience'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'ul',
+	                  null,
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'role' },
+	                      _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Front-end / Rails / Node.js Developer'
+	                      ),
+	                      _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        _react2.default.createElement(
+	                          'a',
+	                          { href: 'http://oozou.com/' },
+	                          'Oozou Limited'
+	                        )
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'h5',
+	                      null,
+	                      '2012 – 2014'
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'As a fullstack developer, designed and developed rich web applications using Ruby on Rails and Node.js. Created single page application using AngularJS and other cutting-edge technologies.'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'role' },
+	                      _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Software Engineer'
+	                      ),
+	                      _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        'Thomson Reuters Software Thailand'
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'h5',
+	                      null,
+	                      '2010 – 2012'
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Developed web application using ASP.net C# WebForm consuming provided web services. Working in a huge team based on software development with agile methodology.'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'div',
+	                      { className: 'role' },
+	                      _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Front-end Developer'
+	                      ),
+	                      _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        _react2.default.createElement(
+	                          'a',
+	                          { href: 'http://www.ecartstudio.com/' },
+	                          'Ecartstudio'
+	                        )
+	                      )
+	                    ),
+	                    _react2.default.createElement(
+	                      'h5',
+	                      null,
+	                      '2009 – 2010'
+	                    ),
+	                    _react2.default.createElement(
+	                      'p',
+	                      null,
+	                      'Responsible in front-end development, working on HTML/CSS/JS from complex designs. Also worked on backend using ASP.net C# MVC and PHP.'
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'h2',
+	                  null,
+	                  'Education'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'ul',
+	                  null,
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'University of St Andrews · Maynooth University'
+	                      ),
+	                      _react2.default.createElement(
+	                        'h5',
+	                        null,
+	                        '2014 – 2016'
+	                      ),
+	                      _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'MSc in Dependable Software Systems',
+	                        _react2.default.createElement('br', null),
+	                        '(Erasmus Mundus two years programme).'
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Chulalongkorn University'
+	                      ),
+	                      _react2.default.createElement(
+	                        'h5',
+	                        null,
+	                        '2004 – 2008'
+	                      ),
+	                      _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'BSc in Computer Science (2',
+	                        _react2.default.createElement(
+	                          'sup',
+	                          null,
+	                          'nd'
+	                        ),
+	                        ' honour).'
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'h2',
+	                  null,
+	                  'Skills'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'ul',
+	                  { className: 'skills' },
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    'React'
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    'AngularJS'
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    'Sass'
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    'Node.js'
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    'Ruby on Rails'
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    'Java'
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    'C#'
+	                  )
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'h2',
+	                  null,
+	                  'Field of Interests'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'ul',
+	                  null,
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Front-end Development'
+	                      ),
+	                      _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'My bread-and-butter skills. I started my day as a design-to-html developer (and still happy to do that!). Later on I equipped myself with modern front-end technologies, such as developing single page applications. Also since I\'m a big fan of JavaScript I\'d love to work with Node.js, Ruby on Rails is also nice!'
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Information Visualisation and Animation'
+	                      ),
+	                      _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'I love graphs, charts, SVGs, and any slick web animation stuff (mostly based on JavaScript, of course). This would be my dream field of choice to be working on.'
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Mobile Development'
+	                      ),
+	                      _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'I am very interested in this field, but inexperienced with it. It would be great to expand my knowledge of front-end to realm of mobile.'
+	                      )
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'li',
+	                    null,
+	                    _react2.default.createElement(
+	                      'div',
+	                      null,
+	                      _react2.default.createElement(
+	                        'h3',
+	                        null,
+	                        'Game Development'
+	                      ),
+	                      _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        'Back in my youth I played a lot of games. As of now I\'m fond of casual games on mobile and browsers, like those 8-bit graphics. It would be fun to work on this too!'
+	                      )
+	                    )
+	                  )
+	                )
+	              )
+	            )
+	          )
 	        )
 	      );
 	    }
 	  }]);
 
-	  return Hello;
+	  return Resume;
 	}(_react2.default.Component);
 
-	exports.default = Hello;
+	exports.default = Resume;
 
 /***/ },
 /* 208 */
@@ -24110,8 +24499,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./node_modules/css-loader/index.js!./node_modules/postcss-loader/index.js!./style.css", function() {
-				var newContent = require("!!./node_modules/css-loader/index.js!./node_modules/postcss-loader/index.js!./style.css");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/postcss-loader/index.js!./../node_modules/sass-loader/index.js!./style.css", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/postcss-loader/index.js!./../node_modules/sass-loader/index.js!./style.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -24129,7 +24518,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background: green;\n}\nbody span {\n  color: blue;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n}\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/ \n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after, q:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nbody {\n  font-family: 'Lato', sans-serif;\n  padding: 30px 0;\n  font-size: 20px; }\n  @media (max-width: 700px) {\n    body {\n      padding: 30px 50px 30px 20px; } }\n  @media print {\n    body {\n      font-size: 14px;\n      padding: 40px 60px 0 30px; } }\n\na {\n  text-decoration: none;\n  color: inherit; }\n\nh1 {\n  font-family: 'Oswald', sans-serif;\n  font-size: 1.4em;\n  text-transform: uppercase;\n  padding-bottom: 5px; }\n  h1 span.light {\n    color: #ddd; }\n    @media print {\n      h1 span.light {\n        opacity: 0.3; } }\n\nh2 {\n  font-family: 'Fjalla One', sans-serif; }\n\nh6 {\n  font-size: 0.7em;\n  padding-bottom: 30px;\n  line-height: 1.2;\n  color: #777;\n  text-transform: uppercase; }\n\nsup {\n  vertical-align: super;\n  font-size: 0.7em; }\n\n.container {\n  margin: 0 auto; }\n  @media (min-width: 701px) {\n    .container {\n      width: 600px; } }\n  @media print {\n    .container {\n      width: 580px; } }\n\n.data tr td {\n  padding-top: 10px;\n  vertical-align: top; }\n\n.data tr img.me {\n  width: 124px;\n  border-radius: 62px;\n  margin-left: -5px;\n  margin-top: -5px; }\n  @media (max-width: 700px) {\n    .data tr img.me {\n      width: 100px;\n      border-radius: 50px;\n      margin-left: 0px; } }\n  @media screen {\n    .data tr img.me {\n      border: 1px solid #fff;\n      box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2); } }\n  @media print {\n    .data tr img.me {\n      width: 96px;\n      border-radius: 48px;\n      margin: -10px -15px 0 0; } }\n\n.data tr .role {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex; }\n\n.data tr .skills {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n  padding-bottom: 15px; }\n  .data tr .skills li {\n    width: 33%;\n    padding-bottom: 5px; }\n    @media (max-width: 700px) {\n      .data tr .skills li {\n        width: 50%; } }\n    @media print {\n      .data tr .skills li {\n        width: 25%; } }\n\n.data tr h2 {\n  width: 100px;\n  padding-right: 45px;\n  text-transform: uppercase;\n  text-align: right; }\n  @media (max-width: 700px) {\n    .data tr h2 {\n      width: 100px;\n      padding-right: 25px; } }\n  @media print {\n    .data tr h2 {\n      padding-right: 35px; } }\n\n.data tr h3 {\n  font-weight: bold;\n  font-size: 0.8em;\n  font-family: 'Roboto Condensed', sans-serif;\n  text-transform: uppercase; }\n\n.data tr h4 {\n  font-size: 0.8em;\n  margin-left: 7px;\n  color: #777; }\n\n.data tr h5 {\n  padding-top: 2px;\n  font-size: 0.7em;\n  color: #777; }\n\n.data tr p {\n  padding: 15px 0 30px;\n  font-size: 0.7em;\n  letter-spacing: 0.4px;\n  line-height: 1.2; }\n  @media print {\n    .data tr p {\n      padding: 10px 0 20px;\n      font-size: 0.8em;\n      line-height: 1.1; } }\n", ""]);
 
 	// exports
 
