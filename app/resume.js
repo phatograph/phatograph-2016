@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './../css/style.css';
+import { NameHeading, Contact } from './shared.js';
 
 export default class Resume extends React.Component {
   render() {
@@ -8,18 +9,14 @@ export default class Resume extends React.Component {
         <table className={styles.data}>
           <tbody>
             <tr>
-              <td><h2><img className={styles.me} src="http://www.gravatar.com/avatar/669eba01a4293df2f86fb10857efa0af?s=640" alt="me" /></h2></td>
               <td>
-                <h1>
-                  <span>Phat</span><span className={styles.light}>tara</span><br />
-                  <span>Wang</span><span className={styles.light}>rungarun</span>
-                </h1>
-                <h6>
-                  St Andrews, UK &middot; Thai citizen &middot; born in 1987<br />
-                  <a href="mailto:phatograph@gmail.com?subject=Hello!">phatograph@gmail.com</a> &middot;
-                  <a href="http://www.phatograph.com" target="_blank">phatograph.com</a><br />
-                  +44 7934 592402
-                </h6>
+                <h2>
+                  <img className={styles.me} src="http://www.gravatar.com/avatar/669eba01a4293df2f86fb10857efa0af?s=640" alt="me" />
+                </h2>
+              </td>
+              <td>
+                <NameHeading />
+                <Contact />
               </td>
             </tr>
             <tr className={styles.exp}>
