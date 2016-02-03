@@ -51,3 +51,8 @@
     }
   }
 }
+
+.copyright {
+  font-size: 12px !important;
+  color: #ccc;
+}

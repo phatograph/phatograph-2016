@@ -34,6 +34,14 @@ let App = React.createClass({
                 </ul>
               </td>
             </tr>
+            <tr>
+              <td></td>
+              <td>
+                <p className={landing.copyright}>
+                  2016 &copy; phatograph.com
+                </p>
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>
