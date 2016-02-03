@@ -1,6 +1,6 @@
-var autoprefixer = require('autoprefixer');
-var precss       = require('precss');
-var path         = require('path');
+var autoprefixer      = require('autoprefixer');
+var precss            = require('precss');
+var path              = require('path');
 
 module.exports = {
   entry: [
@@ -23,7 +23,7 @@ module.exports = {
     {
       test:   /\.css$/,
       exclude: /(node_modules|bower_components)/,
-      loader: "style-loader!css-loader!postcss-loader"
+      loader: "style-loader!css-loader!postcss-loader!sass-loader"
     }
     ],
   },

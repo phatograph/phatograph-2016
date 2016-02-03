@@ -4,21 +4,12 @@ import ReactRouter from 'react-router';
 import { Router, Route, Link } from 'react-router';
 let createBrowserHistory = require('history/lib/createBrowserHistory');
 
-import Hello from './component.jsx';
-import './../style.css';
+import Resume from './resume.jsx';
 
 let App = React.createClass({
   render() {
     return (
       <p>Hello!!</p>
-    );
-  }
-});
-
-let Resume = React.createClass({
-  render() {
-    return (
-      <p>Resume!</p>
     );
   }
 });
