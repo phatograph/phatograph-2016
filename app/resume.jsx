@@ -1,18 +1,18 @@
 import React from 'react';
-import './../css/style.css';
+import styles from './../css/style.css';
 
 export default class Resume extends React.Component {
   render() {
     return (
-      <div className="container">
-        <table className="data">
+      <div className={styles.container}>
+        <table className={styles.data}>
           <tbody>
             <tr>
-              <td><h2><img className="me" src="http://www.gravatar.com/avatar/669eba01a4293df2f86fb10857efa0af?s=640" alt="me" /></h2></td>
+              <td><h2><img className={styles.me} src="http://www.gravatar.com/avatar/669eba01a4293df2f86fb10857efa0af?s=640" alt="me" /></h2></td>
               <td>
                 <h1>
-                  <span>Phat</span><span className="light">tara</span><br />
-                  <span>Wang</span><span className="light">rungarun</span>
+                  <span>Phat</span><span className={styles.light}>tara</span><br />
+                  <span>Wang</span><span className={styles.light}>rungarun</span>
                 </h1>
                 <h6>
                   St Andrews, UK &middot; Thai citizen &middot; born in 1987<br />
@@ -22,14 +22,14 @@ export default class Resume extends React.Component {
                 </h6>
               </td>
             </tr>
-            <tr className="exp">
+            <tr className={styles.exp}>
               <td>
                 <h2>Experience</h2>
               </td>
               <td>
                 <ul>
                   <li>
-                    <div className="role">
+                    <div className={styles.role}>
                       <h3>Front-end / Rails / Node.js Developer</h3>
                       <h4><a href="http://oozou.com/">Oozou Limited</a></h4>
                     </div>
@@ -40,7 +40,7 @@ export default class Resume extends React.Component {
                     </p>
                   </li>
                   <li>
-                    <div className="role">
+                    <div className={styles.role}>
                       <h3>Software Engineer</h3>
                       <h4>Thomson Reuters Software Thailand</h4>
                     </div>
@@ -51,7 +51,7 @@ export default class Resume extends React.Component {
                     </p>
                   </li>
                   <li>
-                    <div className="role">
+                    <div className={styles.role}>
                       <h3>Front-end Developer</h3>
                       <h4><a href="http://www.ecartstudio.com/">Ecartstudio</a></h4>
                     </div>
@@ -92,7 +92,7 @@ export default class Resume extends React.Component {
                 <h2>Skills</h2>
               </td>
               <td>
-                <ul className="skills">
+                <ul className={styles.skills}>
                   <li>React</li>
                   <li>AngularJS</li>
                   <li>Sass</li>

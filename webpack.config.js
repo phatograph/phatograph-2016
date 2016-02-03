@@ -23,12 +23,12 @@ module.exports = {
     {
       test:   /\.css$/,
       exclude: /(node_modules|bower_components)/,
-      loader: "style-loader!css-loader!postcss-loader!sass-loader"
+      loader: "style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!sass-loader!postcss-loader"
     }
     ],
   },
   postcss: function () {
-    return [autoprefixer, precss];
+    return [autoprefixer];
   },
   devServer: {
     colors: true,
