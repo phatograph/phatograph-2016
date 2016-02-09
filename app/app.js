@@ -30,6 +30,7 @@ let App = React.createClass({
                   <li><a href="resume" target="_blank">Résumé</a></li>
                   <li><a href="http://blog.phatograph.com" target="_blank">Blog</a></li>
                   <li><a href="https://github.com/phatograph" target="_blank">GitHub</a></li>
+                  <li><a href="https://uk.linkedin.com/in/phatograph" target="_blank">LinkedIn</a></li>
                   <li><a href="https://twitter.com/phatograph" target="_blank">Twitter</a></li>
                 </ul>
               </td>
