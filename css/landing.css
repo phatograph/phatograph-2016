@@ -42,12 +42,26 @@
     border-style: solid;
     border-color: rgba(0, 0, 0, 0);
 
+    small {
+      display: block;
+      transition: all 0.5s ease-in-out;
+      padding-top: 3px;
+      letter-spacing: 0 !important;
+      opacity: 0;
+      font-size: 10px;
+      color: #000;
+    }
+
     &:hover {
       margin-bottom: 30px;
       padding: 20px 0;
       color: #000;
       border-color: rgba(0, 0, 0, 1);
       letter-spacing: 3px;
+
+      small {
+        opacity: 1;
+      }
     }
   }
 }

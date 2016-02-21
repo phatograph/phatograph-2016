@@ -31,7 +31,12 @@ let App = React.createClass({
                   <li><a href="http://blog.phatograph.com" target="_blank">Blog</a></li>
                   <li><a href="https://github.com/phatograph" target="_blank">GitHub</a></li>
                   <li><a href="https://uk.linkedin.com/in/phatograph" target="_blank">LinkedIn</a></li>
-                  <li><a href="https://twitter.com/phatograph" target="_blank">Twitter</a></li>
+                  <li>
+                    <a href="https://twitter.com/phatograph" target="_blank">
+                      Twitter
+                      <small>Are you sure you want to see me rant?</small>
+                    </a>
+                  </li>
                 </ul>
               </td>
             </tr>
