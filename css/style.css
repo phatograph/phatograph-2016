@@ -23,10 +23,6 @@ h1 {
 
   span.light {
     color: #eaeaea;
-
-    @media print {
-      opacity: 0.3;
-    }
   }
 }
 
